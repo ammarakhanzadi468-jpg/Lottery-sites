@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lottery Game</title>
+</head>
+<body style="text-align:center; font-family:sans-serif;">
+  <h1>🎲 Lottery Game</h1>
+  <p>Click button to try your luck!</p>
+  
+  <button onclick="draw()">Draw Number</button>
+  
+  <h2 id="result"></h2>
+
+  <script>
+    function draw() {
+      let num = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("result").innerText = "Your number: " + num;
+    }
+  </script>
+</body>
+</html>
